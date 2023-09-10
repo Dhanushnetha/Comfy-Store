@@ -3,7 +3,8 @@ import { customFetch, formatPrice } from "../utils";
 import FormInput from "./FormInput";
 import SubmitBtn from "./SubmitBtn";
 import { toast } from 'react-toastify';
-import { clearCart } from "../features/cart/cartSlice";
+//import { clearCart } from "../features/cart/cartSlice";
+import { clearCart } from '../Features/Cart/CartSlice'
 
 export const action = (store, queryClient)=> async({request})=>{
     const formData = await request.formData();
